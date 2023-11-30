@@ -83,7 +83,7 @@ class SearchView(ListView):
 def addnewsview(request):
     if request.POST:
         form = AddNewForms(request.POST, request.FILES)
-        print(form.errors)
+        
         if form.is_valid():
             
             form.instance.user = request.user
@@ -97,7 +97,7 @@ def addnewsview(request):
 
 def contactpage(request):
     contactForm = Contact_form(request.POST)
-    print(contactForm)
+    
     if request.POST and contactForm.is_valid():
         contactForm.save()
         
