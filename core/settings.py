@@ -138,7 +138,7 @@ LANGUAGES = [
     ('en', _('English')),
     ('ru', _('Russian'))
 ]
-
+TRANSLATABLE_MODEL_MODULES = ['model.py', 'view.py','form.py']
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 
 LOCALE_PATHS =[
